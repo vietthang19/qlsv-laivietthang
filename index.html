@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>QLSV</title>
+</head>
+<body>
+    <div id="header">
+        <ul id="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="#myclass">Class</a></li>
+            <li><a href="#myschedule">Schedule</a></li>
+            <li><a href="#mycontact">Contact</a></li>
+        </ul>
+        <li class="nav-right js-sign-in"><a href="javascript:void(0)"> Sign in </a></li>
+        <li class="nav-right js-sign-up"><a href="javascript:void(0)"> Sign up </a></li>
+    </div>
+    <div id="content">
+        <div id="home" id="homeslide"></div>
+        <div id="class" id="classsection">
+            <div class="content-header" id="myclass">
+                <h2> MY CLASS </h2>
+            </div>
+
+            <div class="class-content">
+            <div class="custom-list">
+                <div class="handle-header">
+                    <h3>
+                    STUDENT MANAGEMENT
+                    </h3>
+                </div>
+                <div class="handle-input">
+                    <div>
+                        <label for="student-id"><p><p><i class="ti-id-badge" style="padding-right: 8px"></i>Student ID</p></label>
+                        <input type="text" name="id">
+                    </div>
+
+                    <div>
+                        <label for="student-name"><p><i class="ti-user" style="padding-right: 8px"></i>Name</p></label>
+                        <input type="text" name="name">
+                    </div>
+                    
+                    <div>
+                        <label for="student-address"><p><p><i class="ti-location-pin" style="padding-right: 8px"></i>Address</p></label>
+                        <input type="text" name="address">
+                    </div>
+                    
+                </div>
+                <div class="handle-button">
+                    <button class="create-btn">CREATE</button>
+                </div>
+            </div>
+
+            <div class="student-list">
+                <div class="student-header">
+                    <h3> STUDENTS </h3>
+                </div>
+
+                <div class="student-table">
+                    <table style="width: 100%" id="student-table">
+                        <div>
+                            <tr class="student">
+                                <th><p>STUDENT ID</p></th>
+                                <th><p>NAME</p></th>
+                                <th><p>ADDRESS</p></th>
+                                <th><p>STATUS</p></th>
+                            </tr>
+                        </div>                      
+                    </table>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+        <div id="schedule">
+            <div class="content-header" id="myschedule">
+                <h2> SCHEDULE </h2>
+            </div>
+            <div class="time-table">
+                <table style="width: 100%">
+                    <tr>
+                        <th></th>
+                        <th><p>Monday</p></th>
+                        <th><p>Tuesday</p></th>
+                        <th><p>Wednesday</p></th>
+                        <th><p>Thursday</p></th>
+                        <th><p>Friday</p></th>
+                        <th><p>Saturday</p></th>
+                        <th><p>Sunday</p></th>
+                    </tr>
+                    <tr>
+                        <td><p>7h-9h</p></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><p>9h-11h</p></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><p>14h-16h</p></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><p>16h-18h</p></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-image"></div>
+        <div id="contact">
+            <div class="content-header" id="mycontact">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Thang1909"><i class="footer-icon ti-facebook"></i></a>
+                <a href=""><i class="footer-icon ti-instagram"></i></a>
+                <a href=""><i class="footer-icon ti-tumblr-alt"></i></a>
+                <a href=""><i class="footer-icon ti-pinterest"></i></a>
+                <a href=""><i class="footer-icon ti-twitter-alt"></i></a>
+                <a href=""><i class="footer-icon ti-linkedin"></i></a>
+            </div>
+            <p>Powered by <a href="https://www.facebook.com/Thang1909">Lai Viet Thang</a></p>
+        </div>
+    </div>
+
+    <!-- sign in and sign up modal -->
+    <!-- sign up -->
+    <div class="modal js-modal-sign-up">
+        <div class="modal-container js-modal-container">
+            <div class="modal-header">
+                <div class="close-modal js-modal-close"><i class="ti-close"></i></div>
+                <h2>SIGN UP</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <label for="user-name"><p><i class="ti-user"></i>User name:</p></label>
+                    <input type="text">
+                </div>
+    
+                <div class="modal-content">
+                    <label for="password"><p><i class="ti-key"></i>Password:</p></label>
+                    <input type="text">
+                </div>
+                
+                <div class="modal-content">
+                    <label for="re-enter-password"></i><p><i class="ti-key"></i>Re-enter password:</p></label>
+                    <input type="text">
+                </div>
+    
+                <div class="modal-content">
+                    <label for="email"><p><i class="ti-email"></i>Email:</p></label>
+                    <input type="email">
+                </div>
+
+                <div class="modal-submit"><button ><p class="log-in">Submit</p></button></div>
+                <div class="sign-tos">
+                    <p>
+                        By clicking the Submit button,you agree to our <br />
+                        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer"></div> 
+        </div>
+    </div>
+
+    <!-- sign in -->
+    <div class="modal js-modal-sign-in">
+        <div class="modal-container js-modal-container">
+            <div class="modal-header">
+                <div class="close-modal js-sign-in-close"><i class="ti-close"></i></div>
+                <h2>SIGN IN</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <label for="user-name"><p><i class="ti-user"></i>User name:</p></label>
+                    <input type="text">
+                </div>
+    
+                <div class="modal-content">
+                    <label for="password"><p><i class="ti-key"></i>Password:</p></label>
+                    <input type="text">
+                </div>
+        
+                <div class="modal-submit"><button ><p class="log-in">Log in</p></button></div>
+            </div>
+            <div class="modal-footer"></div> 
+        </div>
+    </div>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./handle.js"></script>
+    <script src="./modal.js"></script>
+
+</body>
+
+
+</html>
